@@ -1,0 +1,82 @@
+
+/* Base */
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+html{font-size:16px}
+body{font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; background:#f5f0eb; color:#222}
+:root{--green:#2f6f40; --blue:#0a66c2; --orange:#e08e45; --cream:#f3e4d7; --ink:#222}
+
+.skip-link{position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden}
+.skip-link:focus{left:1rem;top:1rem;width:auto;height:auto;padding:.5rem .75rem;background:#000;color:#fff;border-radius:8px;z-index:999}
+
+/* Shell */
+.site-header,.site-main,.site-footer{max-width:1100px;margin:0 auto;padding:0 1rem}
+
+/* Header */
+.brand{display:flex;align-items:center;gap:.75rem;justify-content:center;padding:1rem 0 .25rem}
+.logo{filter:drop-shadow(0 1px 2px rgba(0,0,0,.15))}
+.brand-text{display:flex;flex-direction:column;align-items:center}
+.brand-name{font-family:'Markazi Text', Georgia, serif;font-size:1.7rem;letter-spacing:.12rem;color:var(--green)}
+.brand-tagline{color:#666;font-size:.95rem}
+
+/* Nav */
+.site-nav{display:flex;justify-content:center;margin:.5rem 0 1rem}
+.site-nav ul{list-style:none;display:flex;gap:1.25rem;padding:.6rem 1.2rem;background:#333;color:#fff;border-radius:999px;box-shadow:0 3px 8px rgba(0,0,0,.15)}
+.site-nav a{color:#fff;text-decoration:none;font-weight:700}
+.site-nav a:hover{opacity:.9}
+.site-nav a[aria-current="page"]{text-decoration:underline;text-underline-offset:.2em}
+
+/* Hero */
+.hero{position:relative;border-radius:18px;overflow:hidden;box-shadow:0 12px 30px rgba(0,0,0,.12);margin-bottom:1.25rem}
+.hero-art{display:block;width:100%;height:auto}
+.hero-overlay{position:absolute;inset:0;padding:1.4rem;color:#fff;display:flex;flex-direction:column;gap:.4rem;background:linear-gradient(180deg, rgba(0,0,0,.28), rgba(0,0,0,.18) 40%, rgba(0,0,0,0))}
+.hero-overlay h1{font-family:'Markazi Text', Georgia, serif;font-size:2.2rem;margin:.2rem 0}
+.hero-overlay .tagline{font-weight:700}
+.hero-ctas{display:flex;gap:.6rem;margin-top:.5rem}
+.btn{display:inline-block;border:0;border-radius:12px;font-weight:700;text-decoration:none;padding:.7rem 1rem;box-shadow:0 6px 16px rgba(0,0,0,.12)}
+.btn-primary{background:var(--orange);color:#fff}
+.btn-ghost{background:rgba(255,255,255,.12);color:#fff}
+.btn-primary:hover{transform:translateY(-1px);filter:brightness(1.05)}
+
+/* Highlights (3 col) */
+.highlights{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin:1.2rem 0}
+.card{background:var(--cream);border-radius:16px;box-shadow:0 6px 18px rgba(0,0,0,.1);overflow:hidden;padding:.75rem}
+.card h2{font-family:'Markazi Text', Georgia, serif;margin:.25rem .5rem .5rem;font-size:1.5rem}
+.figure{margin:0}
+.thumb{width:100%;height:auto;border-radius:12px;display:block}
+.card p{margin:.6rem .5rem}
+
+/* Work */
+.section-header{display:flex;flex-direction:column;gap:.25rem;margin-top:1.25rem}
+.section-header h2{font-family:'Markazi Text', Georgia, serif;font-size:1.8rem;margin:0}
+.section-sub{color:#666}
+.work-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:.75rem}
+.work-card{background:#fff;border-radius:14px;box-shadow:0 6px 18px rgba(0,0,0,.08);padding:.85rem}
+.work-card h3{margin:.25rem .25rem .5rem}
+.work-thumb{width:100%;height:auto;border-radius:10px;display:block}
+
+/* About */
+.about-grid{display:grid;grid-template-columns:2fr 1fr;gap:1rem;margin-top:.5rem}
+.bullets{margin:.25rem 0 .5rem;padding-left:1.1rem}
+.bullets li{margin:.2rem 0}
+.chip{display:inline-block;background:#e6efe8;color:#244; padding:.35rem .6rem;border-radius:999px;margin:.2rem .25rem;font-weight:700;font-size:.9rem}
+
+/* Contact */
+.contact-row{display:flex;gap:.75rem;flex-wrap:wrap}
+.icon-link{display:inline-flex;align-items:center;gap:.45rem;background:#fff;border:1px solid #ddd;border-radius:10px;padding:.5rem .7rem;color:var(--ink);text-decoration:none}
+.icon-link:hover{border-color:#bbb}
+
+/* Footer */
+.site-footer{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.9rem 1rem 1.4rem}
+.footer-logo{width:40px;height:40px;border-radius:8px;background:#e6efe8;display:grid;place-items:center;border:1px solid #cbd5ce}
+.footer-right{color:#444}
+
+/* Responsive */
+@media (max-width: 900px){
+  .highlights{grid-template-columns:1fr 1fr}
+  .work-grid{grid-template-columns:1fr 1fr}
+  .about-grid{grid-template-columns:1fr}
+}
+@media (max-width: 600px){
+  .highlights,.work-grid{grid-template-columns:1fr}
+}

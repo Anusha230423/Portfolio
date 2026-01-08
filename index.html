@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Anusha L — Full Stack Developer Portfolio" />
+  <title>Anusha L | Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Markazi+Text:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- HEADER -->
+  <header class="site-header" role="banner">
+    <div class="brand">
+      <!-- Monogram Logo (SVG) -->
+      <svg class="logo" width="56" height="56" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <defs>
+          <linearGradient id="monoGrad" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#2f6f40"/>
+            <stop offset="1" stop-color="#65a06f"/>
+          </linearGradient>
+        </defs>
+        <rect x="4" y="4" width="56" height="56" rx="14" fill="url(#monoGrad)"/>
+        <text x="32" y="40" text-anchor="middle" font-family="Markazi Text, Georgia, serif" font-weight="600" font-size="22" fill="#ffffff">AL</text>
+      </svg>
+      <div class="brand-text">
+        <strong class="brand-name">Anusha L</strong>
+        <span class="brand-tagline">Full Stack Developer</span>
+      </div>
+    </div>
+
+    <nav class="site-nav" aria-label="Primary">
+      <ul>
+        <li><a href="#home" aria-current="page">Home</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main id="main" class="site-main">
+    <!-- HERO (SVG-only background) -->
+    <section id="home" class="hero" aria-label="Intro">
+      <svg class="hero-art" viewBox="0 0 1200 360" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <defs>
+          <linearGradient id="heroBg" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#2f6f40"/>
+            <stop offset="1" stop-color="#0a66c2"/>
+          </linearGradient>
+          <linearGradient id="wave1" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0" stop-color="#f6d85f"/>
+            <stop offset="1" stop-color="#e08e45"/>
+          </linearGradient>
+        </defs>
+        <rect width="1200" height="360" rx="20" fill="url(#heroBg)"/>
+        <g opacity=".85">
+          <path d="M-40 120 C 160 40, 280 200, 460 120 S 820 40, 1000 140 1300 220, 1340 160" stroke="url(#wave1)" stroke-width="28" fill="none" stroke-linecap="round"/>
+          <path d="M-20 200 C 180 120, 300 260, 500 180 S 860 120, 1060 220 1320 300, 1360 240" stroke="#ffffff" stroke-opacity=".25" stroke-width="22" fill="none" stroke-linecap="round"/>
+        </g>
+        <!-- Code brackets motif -->
+        <g fill="#ffffff" fill-opacity="0.22">
+          <rect x="80" y="60" width="40" height="8" rx="4"/>
+          <rect x="1080" y="280" width="40" height="8" rx="4"/>
+        </g>
+      </svg>
+      <div class="hero-overlay">
+        <h1>Anusha L</h1>
+        <p class="tagline">Java • Spring Boot • Angular • React • Microservices • CI/CD • Cloud</p>
+        <p class="meta">6+ years building secure, scalable apps. Currently working on <strong>SCB – SCPay FAST</strong> (real‑time payments, microservices, Kafka/Solace, OpenShift).</p>
+        <div class="hero-ctas">
+          <a class="btn btn-primary" href="#projects">View Projects</a>
+          <a class="btn btn-ghost" href="#skills">Skills</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS HIGHLIGHTS -->
+    <section id="skills" class="highlights" aria-label="Skills">
+      <article class="card">
+        <h2>Core Stack</h2>
+        <figure class="figure">
+          <svg class="thumb" viewBox="0 0 800 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect width="800" height="200" rx="14" fill="#e6efe8"/>
+            <!-- tech chips -->
+            <g font-family="Inter, Arial" font-size="24" font-weight="700">
+              <rect x="40" y="40" rx="24" width="160" height="48" fill="#2f6f40"/> 
+              <text x="120" y="72" text-anchor="middle" fill="#fff">Java</text>
+              <rect x="220" y="40" rx="24" width="220" height="48" fill="#0a66c2"/>
+              <text x="330" y="72" text-anchor="middle" fill="#fff">Spring Boot</text>
+              <rect x="460" y="40" rx="24" width="140" height="48" fill="#e08e45"/>
+              <text x="530" y="72" text-anchor="middle" fill="#fff">Angular</text>
+              <rect x="620" y="40" rx="24" width="140" height="48" fill="#111"/>
+              <text x="690" y="72" text-anchor="middle" fill="#fff">React</text>
+            </g>
+          </svg>
+          <figcaption>Java, Spring Boot, Angular, React, microservices, REST APIs.</figcaption>
+        </figure>
+        <p>Databases: MySQL, MongoDB, Oracle, PostgreSQL, SQL Server. CI/CD: Jenkins, Azure DevOps. Cloud: AWS, GCP, OpenShift OCP. DevSecOps: SAST, DAST.</p>
+      </article>
+      <article class="card">
+        <h2>Tools & DevOps</h2>
+        <figure class="figure">
+          <svg class="thumb" viewBox="0 0 800 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect width="800" height="200" rx="14" fill="#fff6e9"/>
+            <g stroke="#e08e45" stroke-width="10" fill="none" stroke-linecap="round">
+              <path d="M60 60 H740"/>
+              <path d="M60 120 H740"/>
+              <path d="M60 160 H740"/>
+            </g>
+          </svg>
+          <figcaption>Git, Bitbucket, GitHub, Maven, Tomcat/JBoss, Kafka, Solace, Elastic/Kibana.</figcaption>
+        </figure>
+        <p>Builds and pipelines for automated testing and deployments across Dev/SIT/UAT/Prod.</p>
+      </article>
+      <article class="card">
+        <h2>Front-end & Visualization</h2>
+        <figure class="figure">
+          <svg class="thumb" viewBox="0 0 800 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect width="800" height="200" rx="14" fill="#e9edf7"/>
+            <g fill="#2f6f40">
+              <rect x="100" y="120" width="40" height="60" rx="6"/>
+              <rect x="180" y="100" width="40" height="80" rx="6"/>
+              <rect x="260" y="80" width="40" height="100" rx="6"/>
+              <rect x="340" y="110" width="40" height="70" rx="6"/>
+              <rect x="420" y="70" width="40" height="110" rx="6"/>
+            </g>
+          </svg>
+          <figcaption>HTML, CSS, JavaScript, TypeScript, Tailwind, Chart.js, Go.js, Interact.js.</figcaption>
+        </figure>
+        <p>Strong UI fundamentals with modern frameworks and dynamic data visualization.</p>
+      </article>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="work" aria-label="Projects">
+      <header class="section-header">
+        <h2>Selected Projects</h2>
+        <p class="section-sub">End-to-end design, development, deployment, and optimization.</p>
+      </header>
+      <div class="work-grid">
+        <article class="work-card">
+          <h3>SCB – SCPay FAST (2024–Present)</h3>
+          <svg class="work-thumb" viewBox="0 0 640 360" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect width="640" height="360" rx="12" fill="#dfe8ff"/>
+            <g stroke="#2f6f40" stroke-width="10" fill="none" stroke-linecap="round">
+              <path d="M80 180 H560"/>
+              <path d="M180 240 H560"/>
+            </g>
+            <g fill="#2f6f40">
+              <circle cx="80" cy="180" r="12"/>
+              <circle cx="560" cy="180" r="12"/>
+              <circle cx="180" cy="240" r="12"/>
+              <circle cx="560" cy="240" r="12"/>
+            </g>
+          </svg>
+          <p>Developed microservices with Java/Spring Boot; REST APIs; messaging with Kafka & Solace; CI/CD via Azure DevOps; deployed on OpenShift; monitoring via Elastic/Kibana.</p>
+        </article>
+        <article class="work-card">
+          <h3>No Code Platform (2022–2024)</h3>
+          <svg class="work-thumb" viewBox="0 0 640 360" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect width="640" height="360" rx="12" fill="#e9f3e6"/>
+            <g stroke="#2f6f40" stroke-width="10" fill="none" stroke-linecap="round">
+              <path d="M80 120 H560"/>
+              <path d="M80 200 H560"/>
+              <path d="M80 280 H560"/>
+            </g>
+          </svg>
+          <p>Built drag‑and‑drop UI with Interact.js; state management with NgXS; charts with Chart.js; assisted GoLang REST API integration; TailwindCSS, MongoDB, GCP.</p>
+        </article>
+        <article class="work-card">
+          <h3>Visitor Management (2022–2023)</h3>
+          <svg class="work-thumb" viewBox="0 0 640 360" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect width="640" height="360" rx="12" fill="#fff6e9"/>
+            <g stroke="#e08e45" stroke-width="10" fill="none" stroke-linecap="round">
+              <path d="M100 100 H540"/>
+              <path d="M100 180 H540"/>
+            </g>
+          </svg>
+          <p>Enhanced features using Grails, Java, Spring Boot; secured APIs with Spring Security; created Cron jobs for data transfers; AWS EC2; MySQL; Hibernate JPA.</p>
+        </article>
+        <article class="work-card">
+          <h3>Health Report Management (2020–2021)</h3>
+          <svg class="work-thumb" viewBox="0 0 640 360" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect width="640" height="360" rx="12" fill="#e9edf7"/>
+            <g fill="#2f6f40">
+              <rect x="120" y="240" width="40" height="80" rx="6"/>
+              <rect x="200" y="200" width="40" height="120" rx="6"/>
+              <rect x="280" y="180" width="40" height="140" rx="6"/>
+              <rect x="360" y="220" width="40" height="100" rx="6"/>
+            </g>
+          </svg>
+          <p>Built end‑to‑end with Spring (MVC), Hibernate ORM, Spring Batch for archiving & email triggers; REST API via Spring Boot; Angular 8 front end; MySQL.</p>
+        </article>
+        <article class="work-card">
+          <h3>Trouble Management (2019–2020)</h3>
+          <svg class="work-thumb" viewBox="0 0 640 360" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect width="640" height="360" rx="12" fill="#e6efe8"/>
+            <g stroke="#2f6f40" stroke-width="10" fill="none" stroke-linecap="round">
+              <path d="M80 120 H560"/>
+              <path d="M80 200 H560"/>
+              <path d="M80 280 H560"/>
+            </g>
+          </svg>
+          <p>Implemented DevSecOps (Jenkins, Git, SAST/DAST); SOAP/REST API testing; built developer support tool (Angular 8 + Java + Spring + MongoDB).</p>
+        </article>
+        <article class="work-card">
+          <h3>Billing Management (2018–2019)</h3>
+          <svg class="work-thumb" viewBox="0 0 640 360" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect width="640" height="360" rx="12" fill="#f2e6de"/>
+            <g stroke="#997f6e" stroke-width="8" fill="none" stroke-linecap="round">
+              <path d="M120 140 H520"/>
+              <path d="M120 220 H520"/>
+            </g>
+          </svg>
+          <p>Built microservices with Spring Boot; Dockerized services; Kubernetes orchestration; CI/CD integration with Jenkins; optimized deployment cycles.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about" aria-label="About Anusha L">
+      <header class="section-header">
+        <h2>About</h2>
+      </header>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>Experienced Full Stack Developer with 6+ years designing, developing, and deploying secure, scalable software systems. Strong in problem solving, communication, and cross‑functional collaboration. Capable of owning features end‑to‑end.</p>
+          <ul class="bullets">
+            <li>Domains: Payments, Banking, Enterprise Apps</li>
+            <li>Architectures: Microservices, REST, MVC</li>
+            <li>Environments: Dev, SIT, UAT, Staging, Production</li>
+          </ul>
+        </div>
+        <div class="about-badges" aria-label="Certifications">
+          <span class="chip">IBM: Application Developer – Java Full Stack</span>
+          <span class="chip">Capgemini OCEAN L1 – Java Cloud Native</span>
+          <span class="chip">Capgemini OCEAN L2 – Java Cloud Native</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact" aria-label="Contact">
+      <header class="section-header">
+        <h2>Contact</h2>
+      </header>
+      <div class="contact-row">
+        <a class="icon-link" href="#" aria-label="Email">
+          <svg width="22" height="22" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M3 5h18v14H3z" fill="#2f6f40"/><path d="M3 7l9 7 9-7" fill="none" stroke="#fff" stroke-width="2"/></svg>
+          <span>Email</span>
+        </a>
+        <a class="icon-link" href="https://www.linkedin.com/in/anushal" aria-label="LinkedIn" target="_blank">
+          <svg width="22" height="22" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="4" fill="#0a66c2"/><rect x="6" y="10" width="3" height="8" fill="#fff"/><circle cx="7.5" cy="7.5" r="1.5" fill="#fff"/><path d="M12 10h2.8a3.2 3.2 0 0 1 3.2 3.2V18h-3v-4c0-.7-.5-1.2-1.2-1.2H12V10z" fill="#fff"/></svg>
+          <span>LinkedIn</span>
+        </a>
+        <a class="icon-link" href="#" aria-label="Download CV">
+          <svg width="22" height="22" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3" fill="#e08e45"/><path d="M12 7v7" stroke="#fff" stroke-width="2"/><path d="M9 12l3 3 3-3" fill="none" stroke="#fff" stroke-width="2"/></svg>
+          <span>Download CV</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-left">
+      <div class="footer-logo" aria-hidden="true">
+        <svg width="28" height="28" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+          <rect x="4" y="4" width="56" height="56" rx="14" fill="#2f6f40"/>
+          <text x="32" y="40" text-anchor="middle" font-family="Markazi Text, Georgia, serif" font-weight="600" font-size="22" fill="#ffffff">AL</text>
+        </svg>
+      </div>
+    </div>
+    <div class="footer-right">
+      <small>© <span id="year">2026</span> Anusha L</small>
+    </div>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
